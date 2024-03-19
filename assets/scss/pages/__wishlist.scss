@@ -1,0 +1,143 @@
+.main-cart-area {
+    padding-top: 85px;
+    padding-bottom: 90px;
+
+    .empty-cart {
+        text-align: center;
+
+        p {
+            font-size: 36px;
+            color: #373737;
+            margin-bottom: 40px;
+        }
+
+        a {
+            border: 1px solid #ff5151;
+            padding: 15px 20px;
+            color: #000;
+            font-weight: bold;
+
+            background: linear-gradient(#ff5151 0 0) var(--p, 0)/var(--p, 0) no-repeat;
+            transition: .4s, background-position 0s !important;
+
+            &:hover {
+                --p: 100% !important;
+                color: #fff !important;
+            }
+        }
+    }
+
+    .non-empty-cart {
+        overflow-x: scroll;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 0 15px;
+        color: #373737;
+    }
+
+    thead {
+        tr {
+            th {
+                border-top: medium none;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 21px 45px 22px;
+                text-align: center;
+                vertical-align: middle;
+                color: #010225;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid #ebebeb;
+
+            td {
+                font-size: 15px;
+                padding: 30px 10px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 15px;
+            }
+
+            .table-img {
+                img {
+                    width: 115px;
+                }
+            }
+
+            .product-name {
+                a {
+                    color: #373737;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: #ff5151;
+                    }
+                }
+            }
+
+            .product-price {
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            .plus-minus-box {
+                color: #333;
+                float: left;
+                font-size: 14px;
+                height: 40px;
+                margin: 0;
+                width: 70px;
+                background: transparent none repeat scroll 0 0;
+                border: 1px solid #e1e1e1;
+                padding: 0;
+                text-align: center;
+            }
+
+            .count-down,
+            .count-up {
+                cursor: pointer;
+                border: 1px solid #e1e1e1;
+                height: 40px;
+                width: 20px;
+            }
+
+            .cart-button {
+                button {
+                    color: #fff;
+                    background-color: #ff5151;
+                    outline: none;
+                    border: none;
+                    padding: 7px 12px;
+                    font-size: 12px;
+                    font-weight: bold;
+
+                    &:hover {
+                        background-color: #111;
+                    }
+                }
+            }
+        }
+    }
+
+    .pages-change {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            color: #373737;
+
+            &:hover {
+                color: #ff5151;
+            }
+        }
+    }
+}
